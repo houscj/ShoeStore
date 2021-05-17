@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.onboarding.WelcomeFragment">
+
+    <LinearLayout
+        android:id="@+id/welcome_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:id="@+id/welcome_textView"
+            style="@style/title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_textView" />
+
+        <TextView
+            android:id="@+id/slogan_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/slogan_text_view"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/welcome_button"
+            style="@style/next_button_style"
+            android:layout_marginTop="150dp"
+            android:text="@string/next_button" />
+    </LinearLayout>
+</layout>

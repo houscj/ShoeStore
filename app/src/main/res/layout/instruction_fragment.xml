@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.onboarding.InstructionsFragment">
+
+    <LinearLayout
+        android:id="@+id/instruction_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/instruction_title"
+            style="@style/title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="38dp"
+            android:text="@string/instruction_title" />
+
+        <TextView
+            android:id="@+id/instruction_1_textView"
+            style="@style/instuction_style"
+            android:text="@string/instuction_1_text_view" />
+
+        <TextView
+            android:id="@+id/instruction_2_textView"
+            style="@style/instuction_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instuction_2_text_view" />
+
+        <TextView
+            android:id="@+id/instruction_3_textView"
+            style="@style/instuction_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instruction_3_text_view" />
+
+        <Button
+            android:id="@+id/instruction_button"
+            style="@style/next_button_style"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="@string/next_button" />
+    </LinearLayout>
+</layout>

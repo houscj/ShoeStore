@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+    <string name="shoe_listing_fragment_title">Shoe Listing</string>
+    <string name="shoe_detail_fragment_title">Shoe Detail</string>
+    <string name="email_adress_label">Email address</string>
+    <string name="email_adress_hint">Enter your email address</string>
+    <string name="password_label">Password</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="login_button">Login</string>
+    <string name="sign_up_text">Register a new account</string>
+    <string name="login_title">Shoe Store</string>
+    <string name="welcome_textView">Welcome</string>
+    <string name="slogan_text_view">Give your feet the beauty treatment that only brand new shoes can give.</string>
+    <string name="next_button">Next</string>
+    <string name="instruction_title">How it works</string>
+    <string name="instuction_1_text_view">- The contents of your shoe store are displayed on the next screen, where you can check the list of shoes, add new shoe or edit an existing shoe.</string>
+    <string name="instuction_2_text_view">- You can see a detailed overview of a selected shoe including the shoe name, company name, size and description.</string>
+    <string name="instruction_3_text_view">- To add a new shoe click the add button in the bottom right corner on the shoe list screen, then enter the informations of the new shoe and click save button.</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="shoe_name_label">Shoe name</string>
+    <string name="company_name_label">Company name</string>
+    <string name="shoe_size_label">Shoe size</string>
+    <string name="description_label">Description</string>
+    <string name="save_button">save</string>
+    <string name="cancel_button">cancel</string>
+    <string name="login_error">Please check your email address and password and try again</string>
+    <string name="company_label_shoe_item">Company :</string>
+    <string name="size_label_shoe_item">Size :</string>
+    <string name="description_label_shoe_item">Description :</string>
+    <string name="logout_menu">LogOut</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.shoe_detail.ShoeDetailFragment">
+
+    <data>
+        <variable
+            name="newShoe"
+            type="com.udacity.shoestore.models.Shoe" />
+        <variable
+            name="shoeViewModel"
+            type="com.udacity.shoestore.viewmodels.ShoeViewModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/shoe_detail_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/shoe_name_label"
+            style="@style/login_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shoe_name_label" />
+
+        <EditText
+            android:id="@+id/shoe_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/shoe_name_label"
+            android:text="@={newShoe.name}"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/company_name_label"
+            style="@style/login_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/company_name_label" />
+
+        <EditText
+            android:id="@+id/company_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/company_name_label"
+            android:text="@={newShoe.company}"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/shoe_size_label"
+            style="@style/login_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/shoe_size_label" />
+
+        <EditText
+            android:id="@+id/shoe_size_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/shoe_size_label"
+            android:text="@={`` + newShoe.size}"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/description_label"
+            style="@style/login_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/description_label" />
+
+        <EditText
+            android:id="@+id/description_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/description_label"
+            android:text="@={newShoe.description}"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:id="@+id/shoe_detail_button_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/save_button"
+                android:onClick="@{() -> shoeViewModel.updateShoeList(newShoe)}"/>
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:text="@string/cancel_button" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
