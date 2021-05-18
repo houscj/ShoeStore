@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".views.onboarding.InstructionsFragment">
 
+    <!-- we use linear layout because all elements are aligned in same direction 'vertical' -->
     <LinearLayout
         android:id="@+id/instruction_linear_layout"
         android:layout_width="match_parent"

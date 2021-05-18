@@ -1,46 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/shoe_item_linear_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="8dp">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shoe_item_linear_layout">
 
-    <TextView
-        android:id="@+id/shoe_name_list_item"
-        style="@style/shoe_item_style"
-        android:text="Adidas"
-        android:textColor="@color/colorPrimary"
-        android:textSize="16sp"
-        android:textStyle="bold|italic" />
-
-    <TextView
-        android:id="@+id/company_name_list_item"
-        style="@style/shoe_item_style"
+    <!-- we use linear layout because all elements are aligned in same direction 'vertical' -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="2dp"
-        android:text="Comapny : Puma" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
 
-    <TextView
-        android:id="@+id/shoe_size_list_item"
-        style="@style/shoe_item_style"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Size : 12" />
+        <TextView
+            android:id="@+id/shoe_name_list_item"
+            style="@style/shoe_item_style"
+            android:text="Adidas"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
 
-    <TextView
-        android:id="@+id/description_list_item"
-        style="@style/shoe_item_style"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:maxLines="3"
-        android:text="Description : best shoe in the world that make people happy" />
+        <TextView
+            android:id="@+id/company_name_list_item"
+            style="@style/shoe_item_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="Comapny : Puma" />
 
-    <View
-        android:id="@+id/view_shoe_item"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="4dp"
-        android:background="@color/colorPrimary" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/shoe_size_list_item"
+            style="@style/shoe_item_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Size : 12" />
+
+        <TextView
+            android:id="@+id/description_list_item"
+            style="@style/shoe_item_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:text="Description : best shoe in the world that make people happy" />
+
+        <View
+            android:id="@+id/view_shoe_item"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorPrimary" />
+    </LinearLayout>
+</layout>

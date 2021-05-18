@@ -4,25 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".views.shoe_listing.ShoeListingFragment">
 
-    <RelativeLayout
-        android:id="@+id/shoe_list_relative_layout"
+    <!-- here constraint layout is necessary to combine between ScrollView and FAButton,
+    because FAB should appear in foreground and ScrollView in background  -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/shoe_list_constraint_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/add_shoe_floating_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_margin="16dp"
-            android:clickable="true"
-            app:srcCompat="@drawable/ic_add" />
-
         <ScrollView
             android:id="@+id/shoe_list_scroll_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:id="@+id/shoe_list_linear_layout"
@@ -31,5 +27,17 @@
                 android:orientation="vertical" />
         </ScrollView>
 
-    </RelativeLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_shoe_floating_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_add" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
